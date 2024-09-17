@@ -1,0 +1,12 @@
+.vscode
+*.o
+*.obj
+*.out
+*.exe
+*.dSYM/
+*.pdb
+*.tmp
+*.log
+build/
+bin/
+obj/

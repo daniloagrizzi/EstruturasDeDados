@@ -88,7 +88,7 @@ void inverterPilha()
   }
   else
   {
-    Aluno *tempStack = NULL;
+    Aluno *tempPilha = NULL;
     Aluno *temp = top;
 
     while (temp != NULL)
@@ -97,12 +97,12 @@ void inverterPilha()
       strcpy(novo->nome, temp->nome);
       novo->idade = temp->idade;
       novo->nota = temp->nota;
-      novo->proximo = tempStack;
-      tempStack = novo;
+      novo->proximo = tempPilha;
+      tempPilha = novo;
       temp = temp->proximo;
     }
 
-    top = tempStack;
+    top = tempPilha;
   }
 }
 
