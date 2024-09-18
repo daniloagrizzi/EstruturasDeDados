@@ -3,8 +3,7 @@
 #include <string.h>
 
 typedef struct Aluno
-{ // Aqui estou criando a estrutura do aluno e renomeando
-  // para poder chama-lo apenas como Aluno
+{ // Aqui estou criando a estrutura do aluno e renomeando  para poder chama-lo apenas como Aluno
   char nome[50];
   int idade;
   float nota;
@@ -120,14 +119,6 @@ int main()
 {
   int opcao;
   Aluno aluno;
-
-  Aluno aluno1 = {"João", 20, 8.5};
-  Aluno aluno2 = {"Maria", 22, 9.0};
-  Aluno aluno3 = {"Pedro", 21, 7.5};
-
-  push(aluno1);
-  push(aluno2);
-  push(aluno3);
 
   do
   {
