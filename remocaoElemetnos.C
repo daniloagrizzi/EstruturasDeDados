@@ -22,14 +22,18 @@ void removerVariosValoresIguais(int vetor[], int *tamanho, int valorParaRemover)
     printf("Processo de remoção finalizado. Tamanho atual do vetor: %d\n", *tamanho);
 }
     
-
 int main() {
     int vetor[] = {0, 0, 1, 1, 1, 2, 2, 3, 0, 3};
     int valor = 1;
     int tamanho = 10;
 
     removerVariosValoresIguais(vetor, &tamanho, valor);
-    
+
+    printf("Vetor após remoção:\n");
+    for (int i = 0; i < tamanho; i++) {
+        printf("%d ", vetor[i]);
+    }
+    printf("\n");
 
     return 0;
 }
