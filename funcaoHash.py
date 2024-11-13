@@ -1,7 +1,7 @@
 import hashlib
 
 
-arquivo = input("Digite o caminho do arquivo")
+arquivo = input("Digite o caminho do arquivo: ")
 algoritmo = input("Digite o modelo para gerar o hash (1 = sha256 ou  2 = sha1): ")
 
 def gerarHashDoArquivo(arquivo, algoritmo):
